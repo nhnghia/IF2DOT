@@ -18,6 +18,7 @@
 
 FILE *output;
 char *fileName;
+bool isOnlyState;
 
 static const char* DEADLINE_NAMES[3] = {"eager", "delayable", "lazy"};
 
@@ -30,17 +31,18 @@ char* Dump(IfObject *obj){
 	
 	FILE *tmp = tmpfile();//create e temporary file
 	obj->Dump(tmp);
+	fflush(tmp);
 	
 	//read content of tmp file
 	rewind(tmp);	//set postion of stream to the beginning
 	char c;
-	char buf[1024];
+	char buf[1024] = {0};
 	int n=0;
 	while ((c = getc(tmp)) != EOF){
 		if (c == '"')
 			buf[n++] = '\\';
 		buf[n++] = c;
-		if (n == 1024)
+		if (n == 1022)
 			break;
 	}
 	char *str = (char*)malloc(sizeof(char) * n);
@@ -53,8 +55,8 @@ char* Dump(IfObject *obj){
 /*
 * Target of a transition is either a state (IfNextstateAction) or a stop (IfStopAction)
 */
-const char *getTarget (IfTransition *t){
-	IfAction *act = t->GetTerminator();
+const char *getTarget (IfTransition *tran){
+	IfAction *act = tran->GetTerminator();
 	if (act == NULL)
 		return "-";
 	if (act->IsStop()){
@@ -64,15 +66,18 @@ const char *getTarget (IfTransition *t){
 		if (sa){
 			char *s = Dump(sa);
 			//s = nextstate s2; ==> extract "s2"
+			//printf("\n%s", s);
 			int n = strlen(s);
 			for (int i=10; i<n; i++)
-				if (s[i] == ';')
+				if (s[i] == ';' || s[i] == ' ' || s[i] == '#'){
 					n = i;
+					break;
+				}
 			n -= 10;
 			char *str = (char *) malloc(sizeof(char)*n);
 			for (int i=0; i<n; i++)
 				str[i] = s[i+10];
-			
+			//printf("===%s==", str);
 			return str;
 		}
 	}
@@ -86,10 +91,17 @@ int print_tran(IfState *src, IfTransition *tran){
 	
 	char *t1 = src->GetName();
 	const char* t2 = getTarget(tran);
-	fprintf(output, "\n  %s -> %s",
-		t1,
-		(strcmp(t2, "-") == 0) ? t1 : t2
-	);
+	char *t3;
+	if (strcmp(t2, "-") == 0)
+		t3 = t1;
+	else{
+		int n = strlen(t2);
+		t3 = new char[n];
+		for (int i=0; i<n; i++)
+			t3[i] = t2[i];
+	}
+	
+	fprintf(output, "\n  %s -> %s", t1, t3);
 	
 	fprintf(output, " [label=\"[%s]\\n",DEADLINE_NAMES[tran->GetDeadline()]);
 
@@ -106,9 +118,13 @@ int print_tran(IfState *src, IfTransition *tran){
 	if (str)
 		fprintf(output, "%s ", str);
 	
-	str = Dump(tran->GetBody());
-	if (str){
-		fprintf(output, "\\n/%s", str);
+	if (isOnlyState){
+		//fprintf(output, "body");
+	}else{
+		str = Dump(tran->GetBody());
+		if (str){
+			fprintf(output, "\\n/%s", str);
+		}
 	}
 	
 	fprintf(output, "\"];");
@@ -144,7 +160,7 @@ int print_proc(IfProcessEntity *proc){
 		printf("\n  Error: cannot create file [%s]\n", str);
 		exit(0);
 	}
-	fprintf(output, "\ndigraph %s {", procName);
+	fprintf(output, "digraph %s {", procName);
 	fprintf(output, "\n  stop [color=red];");
 		
 	IfList<IfState> *states = proc->GetStates();
@@ -195,6 +211,7 @@ FILE* copy(FILE *src){
 			}
 		}
 	}
+	fflush(des);
 	rewind(des);
 	return des;
 }
@@ -203,8 +220,10 @@ FILE* copy(FILE *src){
 
 int main(int argc, char * argv[]) {
   
-  if (argc != 2) {
-    fprintf(stderr, "\n Usage: %s fileName\n\n",argv[0]); 
+  if (argc != 2 && argc != 3) {
+    fprintf(stderr, "\n Usage: %s fileName [state]",argv[0]); 
+	 fprintf(stderr, "\n         [state] : do not draw body of transition labels");
+	 fprintf(stderr, "\n\n");
     return 0;
   }
   
@@ -218,7 +237,7 @@ int main(int argc, char * argv[]) {
   fileName = argv[1];
   //remove .if at the end of fileName
   fileName[strlen(fileName) - 3] = '\0';
-
+  isOnlyState = (argc == 3);
 
 
   file = copy(file);
