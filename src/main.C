@@ -4,7 +4,6 @@
    2014/03/31
 */
 
-#include <fcntl.h>    /* For O_RDWR */
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,11 +12,12 @@
 #include <iostream>
 
 #include <string>
-#include <algorithm>
 
 #include "model.h"
 #include <signal.h>
 
+FILE *output;
+char *fileName;
 
 static const char* DEADLINE_NAMES[3] = {"eager", "delayable", "lazy"};
 
@@ -72,10 +72,11 @@ const char *getTarget (IfTransition *t){
 			char *str = (char *) malloc(sizeof(char)*n);
 			for (int i=0; i<n; i++)
 				str[i] = s[i+10];
+			
 			return str;
 		}
 	}
-	return "-";
+	return "_";
 }
 
 int print_tran(IfState *src, IfTransition *tran){
@@ -83,40 +84,43 @@ int print_tran(IfState *src, IfTransition *tran){
 		return 0;
 	}
 	
-	printf("\n  %s -> %s",
-		src->GetName(),
-		getTarget(tran)
+	char *t1 = src->GetName();
+	const char* t2 = getTarget(tran);
+	fprintf(output, "\n  %s -> %s",
+		t1,
+		(strcmp(t2, "-") == 0) ? t1 : t2
 	);
 	
-	printf(" [label=\"[%s] ",DEADLINE_NAMES[tran->GetDeadline()]);
-	
+	fprintf(output, " [label=\"[%s]\\n",DEADLINE_NAMES[tran->GetDeadline()]);
+
 	char *str;
 	str = Dump(tran->GetProvided());
 	if (str)
-		printf("provided %s ", str);
-	
+		fprintf(output, "provided %s ", str);
+
 	str = Dump(tran->GetWhen());
 	if (str)
-		printf("when %s ", str);
+		fprintf(output, "when %s ", str);
 	
 	str = Dump(tran->GetInput());
 	if (str)
-		printf("%s ", str);
+		fprintf(output, "%s ", str);
 	
 	str = Dump(tran->GetBody());
 	if (str){
-		printf("/%s", str);
+		fprintf(output, "\\n/%s", str);
 	}
 	
-	printf("\"];");
+	fprintf(output, "\"];");
 	
 	return 1;
 }
 
 int print_state(IfState *s){
 	if (s->IsStart()){
-			printf("\n  %s[shape=doublecircle];", s->GetName());
+			fprintf(output, "\n  %s[shape=doublecircle];", s->GetName());
 	}
+
 	IfList<IfTransition> *trans = s->GetOutTransitions();
 	int n = trans->GetCount();
 	
@@ -127,18 +131,30 @@ int print_state(IfState *s){
 }
 
 int print_proc(IfProcessEntity *proc){		
-	printf("\n\n");
-	printf("\ndigraph %s {", proc->GetName());
-	printf("\n  stop [style=filled, fillcolor=red];");
+	const char *procName = proc->GetName();
+	int len = strlen(fileName) + strlen(procName) + 5;
+	char *str = new char[len];
+
+	sprintf(str, "%s.%s.dot", fileName, procName);
 	
+	printf("\n  Write the process [%s] to file [%s]", procName, str);
+
+	output = fopen(str, "w");
+	if (output == NULL){
+		printf("\n  Error: cannot create file [%s]\n", str);
+		exit(0);
+	}
+	fprintf(output, "\ndigraph %s {", procName);
+	fprintf(output, "\n  stop [color=red];");
+		
 	IfList<IfState> *states = proc->GetStates();
 	
 	int n = states->GetCount();
-	for (int i=0; i<n; i++)
+	for (int i=0; i<n; i++){
 		print_state(states->GetAt(i));
-	
-	printf("\n}\n\n");
-	
+	}
+	fprintf(output, "\n}\n\n");
+
 	return 1;
 }
 
@@ -189,22 +205,35 @@ int main(int argc, char * argv[]) {
   
   if (argc != 2) {
     fprintf(stderr, "\n Usage: %s fileName\n\n",argv[0]); 
-    return 1;
+    return 0;
   }
   
   FILE *file;
   file = fopen(argv[1], "r");
+  if (file == NULL){
+	  fprintf(stderr, "Cannot open file: %s", argv[1]);
+	  return 0;
+  }
+
+  fileName = argv[1];
+  //remove .if at the end of fileName
+  fileName[strlen(fileName) - 3] = '\0';
+
+
+
   file = copy(file);
-  //file = fopen("ETCS_o.if", "r");
+ 
+
   IfSystemEntity *system = Load(file, NULL, 0);
   IfList<IfProcessEntity> *proc = system->GetProcesses();
-  int n = proc->GetSize();
+  int n = proc->GetCount();
   for (int i=0; i<n; i++){
 	  print_proc(proc->GetAt(i));
   }
   
   fclose(file);
-  return 0; 
+  printf("\n\n");
+  return 1; 
 }
 
 
