@@ -14,7 +14,7 @@
 #include <string>
 
 #include "model.h"
-//#include <signal.h>
+#include <signal.h>
 
 FILE *output;
 char *fileName;
@@ -45,12 +45,9 @@ char* Dump(IfObject *obj){
 		if (n == 1022)
 			break;
 	}
-	
-	//convert array to char*
-	char *str = (char*)malloc(sizeof(char) * (n+1));
+	char *str = (char*)malloc(sizeof(char) * n);
 	for (int i=0; i<n; i++)
 		str[i] = buf[i];
-	str[n] = '\0';
 	fclose(tmp);	//close file stream ==> delete tmp file
 	return str;
 }
@@ -69,17 +66,18 @@ const char *getTarget (IfTransition *tran){
 		if (sa){
 			char *s = Dump(sa);
 			//s = nextstate s2; ==> extract "s2"
+			//printf("\n%s", s);
 			int n = strlen(s);
-			//printf("\n===%s===%d", s,n);
-			n--; //remove the ; at the last
-			char *str = (char *) malloc(sizeof(char)*(n-10));
-			int j=0;
-			for (int i=10; i<n; i++){
-				str[j++] = s[i];
-			}
-			str[j] = '\0';
-			
-			//printf("\n===%s===", str);
+			for (int i=10; i<n; i++)
+				if (s[i] == ';' || s[i] == ' ' || s[i] == '#'){
+					n = i;
+					break;
+				}
+			n -= 10;
+			char *str = (char *) malloc(sizeof(char)*n);
+			for (int i=0; i<n; i++)
+				str[i] = s[i+10];
+			//printf("===%s==", str);
 			return str;
 		}
 	}
@@ -93,14 +91,17 @@ int print_tran(IfState *src, IfTransition *tran){
 	
 	char *t1 = src->GetName();
 	const char* t2 = getTarget(tran);
-
+	char *t3;
 	if (strcmp(t2, "-") == 0)
-		fprintf(output, "\n  %s -> %s", t1, t1);
+		t3 = t1;
 	else{
-		fprintf(output, "\n  %s -> %s", t1, t2);
+		int n = strlen(t2);
+		t3 = new char[n];
+		for (int i=0; i<n; i++)
+			t3[i] = t2[i];
 	}
 	
-	
+	fprintf(output, "\n  %s -> %s", t1, t3);
 	
 	fprintf(output, " [label=\"[%s]\\n",DEADLINE_NAMES[tran->GetDeadline()]);
 
@@ -253,4 +254,5 @@ int main(int argc, char * argv[]) {
   printf("\n\n");
   return 1; 
 }
+
 
