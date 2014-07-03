@@ -16,11 +16,28 @@
 #include "model.h"
 #include <signal.h>
 
+using namespace std;
+
 FILE *output;
 char *fileName;
 bool isOnlyState;
 
 static const char* DEADLINE_NAMES[3] = {"eager", "delayable", "lazy"};
+
+const char * replaceAll(char *txt, char* c_from, char *c_to){
+	string s_txt = string(txt);
+	string s_from =string(c_from);
+	string s_to = string(c_to);
+
+	if(s_from.empty())
+	    return s_txt.c_str();
+	size_t start_pos = 0;
+	while((start_pos = s_txt.find(s_from, start_pos)) != std::string::npos) {
+		s_txt.replace(start_pos, s_from.length(), s_to);
+		start_pos += s_to.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
+	}
+	return s_txt.c_str();
+}
 
 /*
 * convert the output of obj->Dump(stdout) to char*
@@ -30,6 +47,7 @@ char* Dump(IfObject *obj){
 		return NULL;
 	
 	FILE *tmp = tmpfile();//create e temporary file
+
 	obj->Dump(tmp);
 	fflush(tmp);
 	
@@ -45,10 +63,15 @@ char* Dump(IfObject *obj){
 		if (n == 1022)
 			break;
 	}
+	fclose(tmp);	//close file stream ==> delete tmp file
+
+	if (n==0)
+		return "";
+
 	char *str = (char*)malloc(sizeof(char) * n);
 	for (int i=0; i<n; i++)
 		str[i] = buf[i];
-	fclose(tmp);	//close file stream ==> delete tmp file
+	str[n] = '\0';
 	return str;
 }
 
@@ -77,6 +100,7 @@ const char *getTarget (IfTransition *tran){
 			char *str = (char *) malloc(sizeof(char)*n);
 			for (int i=0; i<n; i++)
 				str[i] = s[i+10];
+			str[n] = '\0';
 			//printf("===%s==", str);
 			return str;
 		}
@@ -101,29 +125,31 @@ int print_tran(IfState *src, IfTransition *tran){
 			t3[i] = t2[i];
 	}
 	
-	fprintf(output, "\n  %s -> %s", t1, t3);
-	
-	fprintf(output, " [label=\"[%s]\\n",DEADLINE_NAMES[tran->GetDeadline()]);
+	fprintf(output, "\n  %s -> %s [label=\"", t1, t3);
+	if (tran->GetDeadline() != 0)
+		fprintf(output, " %s\\n",DEADLINE_NAMES[tran->GetDeadline()]);
 
 	char *str;
 	str = Dump(tran->GetProvided());
 	if (str)
-		fprintf(output, "provided %s ", str);
+		fprintf(output, "[%s] ", str);
 
 	str = Dump(tran->GetWhen());
 	if (str)
-		fprintf(output, "when %s ", str);
+		fprintf(output, "[%s] ", str);
 	
 	str = Dump(tran->GetInput());
-	if (str)
-		fprintf(output, "%s ", str);
-	
+	if (str){
+		//replace "input" by "?"
+
+		fprintf(output, "%s ", replaceAll(str, "input", "?"));
+	}
 	if (isOnlyState){
 		//fprintf(output, "body");
 	}else{
 		str = Dump(tran->GetBody());
-		if (str){
-			fprintf(output, "\\n/%s", str);
+		if (strlen(str)){
+			fprintf(output, "\\n/%s", replaceAll(str, "task", ""));
 		}
 	}
 	
