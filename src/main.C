@@ -12,6 +12,7 @@
 #include <iostream>
 
 #include <string>
+#include <algorithm>
 
 #include "model.h"
 #include <signal.h>
@@ -24,19 +25,19 @@ bool isOnlyState;
 
 static const char* DEADLINE_NAMES[3] = {"eager", "delayable", "lazy"};
 
-const char * replaceAll(char *txt, char* c_from, char *c_to){
+string replaceAll(const char *txt, char* c_from, char *c_to){
 	string s_txt = string(txt);
-	string s_from =string(c_from);
+	string s_from = string(c_from);
 	string s_to = string(c_to);
 
-	if(s_from.empty())
-	    return s_txt.c_str();
 	size_t start_pos = 0;
-	while((start_pos = s_txt.find(s_from, start_pos)) != std::string::npos) {
+	start_pos = s_txt.find(s_from, start_pos);
+	while(start_pos != s_txt.npos ) {
 		s_txt.replace(start_pos, s_from.length(), s_to);
 		start_pos += s_to.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
+		start_pos = s_txt.find(s_from, start_pos);
 	}
-	return s_txt.c_str();
+	return s_txt;
 }
 
 /*
@@ -131,9 +132,9 @@ int print_tran(IfState *src, IfTransition *tran){
 
 	char *str;
 	str = Dump(tran->GetProvided());
-	if (str)
+	if (str){
 		fprintf(output, "[%s] ", str);
-
+	}
 	str = Dump(tran->GetWhen());
 	if (str)
 		fprintf(output, "[%s] ", str);
@@ -142,14 +143,16 @@ int print_tran(IfState *src, IfTransition *tran){
 	if (str){
 		//replace "input" by "?"
 
-		fprintf(output, "%s ", replaceAll(str, "input", "?"));
+		fprintf(output, "%s ", replaceAll(str, "input", "?").c_str());
+		//fprintf(output, "%s ", str);
 	}
 	if (isOnlyState){
 		//fprintf(output, "body");
 	}else{
 		str = Dump(tran->GetBody());
 		if (strlen(str)){
-			fprintf(output, "\\n/%s", replaceAll(str, "task", ""));
+			string s = replaceAll(str, "task", "");
+			fprintf(output, "\\n/%s", replaceAll(s.c_str(), "output", "!").c_str());
 		}
 	}
 	
@@ -187,7 +190,7 @@ int print_proc(IfProcessEntity *proc){
 		exit(0);
 	}
 	fprintf(output, "digraph %s {", procName);
-	fprintf(output, "\n  stop [color=red];");
+	//fprintf(output, "\n  stop [color=red];");
 		
 	IfList<IfState> *states = proc->GetStates();
 	
@@ -213,30 +216,36 @@ int print_proc(IfProcessEntity *proc){
 */
 
 FILE* copy(FILE *src){
-	FILE *des = tmpfile();
-	char *sys = "system ";
-	char buf[7];
-	
-	int nread;
-	char c;
-	bool inserted = false;
-	
-	while ((nread = fread(buf, 1, sizeof buf, src)) > 0){
-		fwrite(buf, 1, nread, des);
-		if (!inserted){
-			//this may not happen when the file starts by a comment or sth different with "system"
-			if (strcmp(buf,sys) == 0){		
-				while ((c = getc(src)) != EOF){
-					fprintf(des, "%c", c);
-					if (c == ';'){
-						inserted = true;
-						fprintf(des, "type integer = range 1..1;type pid = range 1..1;type boolean = range 0..1;type clock = range 0..1;");
-						break;
-					}
-				}
-			}
-		}
+	long lSize;
+	char * buffer;
+	size_t result;
+
+	// obtain file size:
+	fseek(src, 0, SEEK_END);
+	lSize = ftell(src);
+	rewind (src);
+
+	// allocate memory to contain the whole file:
+	buffer = (char*) malloc(sizeof(char) * lSize);
+	if (buffer == NULL) {
+		fputs("Memory error", stderr);
+		exit(2);
 	}
+
+	// copy the file into the buffer:
+	result = fread(buffer, 1, lSize, src);
+	if (result != lSize) {
+		fputs("Reading error", stderr);
+		exit(3);
+	}
+	string str = string(buffer);
+	int d = str.find("system ");
+	if (d != str.npos){
+		d = str.find(';', d);	//find ; after system
+		str.replace(d, 1, ";type integer = range 1..1;type pid = range 1..1;type boolean = range 0..1;type clock = range 0..1;");
+	}
+	FILE *des = tmpfile();
+	fwrite(str.c_str(), sizeof(char), str.length(),des);
 	fflush(des);
 	rewind(des);
 	return des;
