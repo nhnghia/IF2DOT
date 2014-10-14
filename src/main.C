@@ -15,9 +15,18 @@
 #include <algorithm>
 
 #include "model.h"
-#include <signal.h>
 
 using namespace std;
+
+
+class State: public IfNextstateAction{
+	public:
+	char *getStateName(){
+		char *str = (char *) malloc(strlen(m_pStateName));
+		strcpy(str, m_pStateName);
+		return str;
+	}
+};
 
 FILE *output;
 char *fileName;
@@ -61,7 +70,7 @@ char* Dump(IfObject *obj){
 		if (c == '"')
 			buf[n++] = '\\';
 		buf[n++] = c;
-		if (n == 1022)
+		if (n == 1023)
 			break;
 	}
 	fclose(tmp);	//close file stream ==> delete tmp file
@@ -70,9 +79,7 @@ char* Dump(IfObject *obj){
 		return "";
 
 	char *str = (char*)malloc(sizeof(char) * n);
-	for (int i=0; i<n; i++)
-		str[i] = buf[i];
-	str[n] = '\0';
+	strcpy(str, buf);
 	return str;
 }
 
@@ -88,22 +95,8 @@ const char *getTarget (IfTransition *tran){
 	}else if (act->IsNextstate()){
 		IfNextstateAction *sa = (IfNextstateAction *) act;
 		if (sa){
-			char *s = Dump(sa);
-			//s = nextstate s2; ==> extract "s2"
-			//printf("\n%s", s);
-			int n = strlen(s);
-			for (int i=10; i<n; i++)
-				if (s[i] == ';' || s[i] == ' ' || s[i] == '#'){
-					n = i;
-					break;
-				}
-			n -= 10;
-			char *str = (char *) malloc(sizeof(char)*n);
-			for (int i=0; i<n; i++)
-				str[i] = s[i+10];
-			str[n] = '\0';
-			//printf("===%s==", str);
-			return str;
+			State *state = (State *) sa;
+			return state->getStateName();
 		}
 	}
 	return "_";
@@ -186,7 +179,7 @@ int print_proc(IfProcessEntity *proc){
 
 	output = fopen(str, "w");
 	if (output == NULL){
-		printf("\n  Error: cannot create file [%s]\n", str);
+		printf("\n     ==> Error: cannot create file [%s]\n", str);
 		exit(0);
 	}
 	fprintf(output, "digraph %s {", procName);
@@ -200,6 +193,7 @@ int print_proc(IfProcessEntity *proc){
 	}
 	fprintf(output, "\n}\n\n");
 
+	printf("\n      ==>   OK");
 	return 1;
 }
 
@@ -207,7 +201,7 @@ int print_proc(IfProcessEntity *proc){
 
 /**
 * truck technique
-* I get error when standard types are not declared. I don't understand why
+* I get an error when standard types are not declared. I don't understand why
 * So I copy the IF file to a temporary file, then insert the definition of these types
 *  type integer = range 1..1;
 *  type pid = range 1..1;
