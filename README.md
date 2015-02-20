@@ -1,19 +1,15 @@
-IF2DOT
+IF2Java
 =======
 
-Generate a graph in DOT format (http://www.graphviz.org/doc/info/lang.html) that represents an IF description
+Generate a Java simulator that represents an IF model
 
 #### Requirement ####
 - Install IF (http://www-if.imag.fr) then set the environment variable IF to the install folder
 
 #### Usage ####
 
-The tool will generate DOT graphs for all IF processes in an IF description, one DOT graph  for one process
+The tool will generate a Java class with name is the name of system in IF model.
 
 To generate all transition descriptions:
 
-> if2dot fileName
-
-To hide bodies of transitions ==> a smaller graph
-
-> if2dot fileName bref
+> if2java fileName
