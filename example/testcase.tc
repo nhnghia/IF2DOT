@@ -1,0 +1,7 @@
+!;	t;	 ELocation{10};	{OBU}0
+!;	{OBU}0;	 MARequest{10};	{RBC}0
+delay 2
+?;	{RBC}0;	 MA{{0,80}};	{OBU}0
+?;	{OBU}0;	 DMIcmd{80};	t
+!;	t;	 ESpeed{0};	{OBU}0
+?;	{OBU}0;	 DMIcmd{8};	t

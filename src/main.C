@@ -280,36 +280,6 @@ const char *getTarget (IfTransition *tran){
 	return "_";
 }
 
-char * get_input(const char *space, IfAction *input){
-	if (input == NULL)
-		return NULL;
-
-	if (input->IsInput()){
-		IfInputAction *in = (IfInputAction *) input;
-		//TODO supporint currently only one parameter
-		IfList<IfExpression> *vars = in->GetParameters();
-		IfExpression *ex = vars->GetAt(0);
-		char *type = get_type(in->GetSignal()->GetParameters()->GetAt(0));
-
-		char  buff[250];
-		snprintf(buff, sizeof(buff), "%s%s = (%s) getInput(%s.class, %s.class)", space, Dump(ex),
-					type,
-					in->GetSignal()->GetName(), type);
-		return buff;
-		/*IfList<IfExpression> *vars = in->GetParameters();
-		int n = vars->GetCount();
-		for (int i=0; i<n; i++){
-			IfExpression *v = vars->GetAt(i);
-			if (v == NULL)
-				continue;
-			fprintf(output, ", %s", Dump(v));
-		}
-		fprintf(output, ");");
-		*/
-	}
-	return NULL;
-}
-
 
 int print_tran(IfState *src, IfTransition *tran){
 	if (tran == NULL){
@@ -331,7 +301,7 @@ int print_tran(IfState *src, IfTransition *tran){
 	inStr = replaceAll(inStr, "input ", "");
 	char *outStr = getOutput(tran->GetBody());
 
-	fprintf(output, "\n			//transition id=\"tr%d\" dst=\"%s\" input=\"%s\" output=\"%s\"",
+	fprintf(output, "\n\n			//transition id=\"tr%d\" dst=\"%s\" input=\"%s\" output=\"%s\"",
 			(++tranID),
 			dst,
 			inStr,
@@ -354,17 +324,32 @@ int print_tran(IfState *src, IfTransition *tran){
 	if (isIf)
 		number_of_tab ++ ;
 
-	char  *buf = get_input("", tran->GetInput());
 
-	if (buf != NULL){
-		fprintf(output, "%sif ((%s) != null) {", get_space(number_of_tab), buf);
+	IfAction *act = tran->GetInput();
+	if (act != NULL && act->IsInput()){
+		IfInputAction *in = (IfInputAction *) act;
+
+		IfList<IfExpression> *vars = in->GetParameters();
+		//TODO supporint currently only one parameter
+		char *varName = Dump(vars->GetAt(0));
+
+		char *type = get_type(in->GetSignal()->GetParameters()->GetAt(0));
+
+
+		char *space = get_space(number_of_tab);
+		fprintf(output, "%s%s _%s = (%s) getInput(%s.class, %s.class);", space, type,
+					varName, type, in->GetSignal()->GetName(), type);
+
+		fprintf(output, "%sif (_%s != null) {", space, varName);
+		fprintf(output, "%s	%s = _%s;", space, varName, varName);
 		number_of_tab ++;
 	}
 
 	printBody(get_space(number_of_tab), tran->GetBody());
+	fprintf(output, "%stranFired = true;", get_space(number_of_tab));
 	fprintf(output, "%snextState(\"%s\");", get_space(number_of_tab), dst);
 
-	if (buf != NULL)
+	if (act != NULL && act->IsInput())
 		fprintf(output, "%s}", get_space(--number_of_tab));
 
 	if (isIf)
@@ -380,12 +365,17 @@ int print_state(IfState *s){
 	}else
 		fprintf(output, "\n\n		public void state_%s(){", s->GetName());
 
+	fprintf(output, "\n			boolean tranFired = false;");
 	IfList<IfTransition> *trans = s->GetOutTransitions();
 	int n = trans->GetCount();
 	
 	for (int i=0; i<n; i++){
 		print_tran(s, trans->GetAt(i));
 	}
+
+	//no transition can be fired, we stand at this state and try to fire again its outgoing transitions
+	fprintf(output, "\n\n			//no transition can be fired, we stand at this state and try to fire again its outgoing transitions"
+			"\n			if (tranFired == false) noFire(\"%s\");", s->GetName());
 
 	fprintf(output, "\n		}");
 	return 1;
@@ -465,11 +455,18 @@ int print_proc(IfProcessEntity *proc){
 	for (int i=0; i<n; i++)
 		print_procedure(p->GetAt(i));
 
+	char *initState = "init";
 	IfList<IfState> *states = proc->GetStates();
 	n = states->GetCount();
 	for (int i=0; i<n; i++){
-		print_state(states->GetAt(i));
+		IfState *s = states->GetAt(i);
+		if (s->IsStart())
+			initState = s->GetName();
+		print_state(s);
 	}
+
+	//init state
+	fprintf(output, "\n		public String getInitStateName(){\n			return \"%s\";\n		}", initState);
 
 	//print other methods
 	fprintf(output, "\n		public void callState(String stateName){");
@@ -542,9 +539,19 @@ void print_type_definitions(IfList<IfType> *types){
 			char *name = rec->GetName();
 			//The signals will be changed to record with name starts with t_
 			if (3 <= strlen(name) && strncmp("t_",name,2) != 0 ){
+				IfList<IfVariable> *vars = rec->GetFields();
+
 				fprintf(output, "\n	public static class %s{", name);
-				print_variables("		",rec->GetFields());
-				fprintf(output, "\n	}");
+				print_variables("		", vars);
+				//function toString()
+				fprintf(output, "\n		public String toString(){\n			return ");
+				for (int j=0; j<vars->GetCount(); j++)
+					if (j == 0)
+						fprintf (output, "%s", vars->GetAt(j)->GetName());
+					else
+						fprintf (output, " + \",\" + %s", vars->GetAt(j)->GetName());
+
+				fprintf(output, ";\n		}\n	}");
 			}
 		}
 	}
@@ -585,7 +592,11 @@ int print_signal_routes(IfList<IfSignalroute> *routes){
 }
 
 int print_system_define(IfSystemEntity *sys){
-	fprintf(output, "public class %s extends Simulator{", systemName);
+	char *comment = "* This class is generated automatically"
+			"\n* {@link https://github.com/nhnghia/IF2DOT/tree/2java}"
+			"\n* @author nhnghia";
+	fprintf(output, "/**\n%s\n*/\npublic class %s extends Simulator{\n	public String getSystemName(){\n		return \"%s\";\n	}",
+			comment, systemName, systemName);
 
 	//Data type
 	print_type_definitions(sys->GetTypes());

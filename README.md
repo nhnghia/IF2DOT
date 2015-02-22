@@ -10,6 +10,8 @@ Generate a Java simulator that represents an IF model
 
 The tool will generate a Java class with name is the name of system in IF model.
 
-To generate all transition descriptions:
-
 > if2java fileName
+
+Then copy file ``example/Simulator.java`` to the same folder with output
+
+See ``example/TestRBC.java`` to know how run a test case.
