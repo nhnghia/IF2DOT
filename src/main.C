@@ -173,14 +173,20 @@ void printBody(const char *space, IfBlockStatement *body){
 			}
 			else if (act->IsOutput()){
 				IfInputAction *in = (IfInputAction *) act;
-				fprintf(output, "%soutput(%s.class", space, in->GetSignal()->GetName());
+				fprintf(output, "%s_out = new %s();", space, in->GetSignal()->GetName());
+
+
 				IfList<IfExpression> *vars = in->GetParameters();
+				/*
 				int n = vars->GetCount();
 				for (int i=0; i<n; i++){
 					IfExpression *v = vars->GetAt(i);
 					fprintf(output, ", %s", Dump(v));
 				}
 				fprintf(output, ");");
+				*/
+				fprintf(output, "%s_out.param = %s;", space, Dump(vars->GetAt(0)));
+				fprintf(output, "%soutput(_out);", space);
 			}
 		}
 		else if (s->IsBlock()){
@@ -365,7 +371,7 @@ int print_state(IfState *s){
 	}else
 		fprintf(output, "\n\n		public void state_%s(){", s->GetName());
 
-	fprintf(output, "\n			boolean tranFired = false;");
+	fprintf(output, "\n			boolean tranFired = false;\n			Signal _out;");
 	IfList<IfTransition> *trans = s->GetOutTransitions();
 	int n = trans->GetCount();
 	
@@ -570,22 +576,18 @@ int print_signal_routes(IfList<IfSignalroute> *routes){
 		int m = lst->GetCount();
 		for (int j=0; j<m; j++){
 			IfSignal *s = lst->GetAt(j);
+			fprintf(output, "\n	public static class %s extends Signal{", s->GetName());
+
 			//TODO currently support only one parameter in signal
 			if (s->GetParameters()->GetAt(0) != NULL)
-				fprintf(output, "\n	public static class %s extends Signal{"
-								"\n		public static String source = \"%s\";"
-								"\n		public static String destination = \"%s\";"
-								"\n		public %s param;"
-								"\n	}",
-								s->GetName(), src, dst,
+				fprintf(output, "\n		public %s param;",
 								get_type(s->GetParameters()->GetAt(0)));
-			//a signal contains no data, e.g, ACK
-			else
-				fprintf(output, "\n	public static class %s extends Signal{"
-								"\n		public static String source = \"%s\";"
-								"\n		public static String destination = \"%s\";"
-								"\n	}",
-								s->GetName(), src, dst);
+			fprintf(output, "\n		public %s(){"
+											"\n			source = \"%s\";"
+											"\n			destination = \"%s\";"
+											"\n		}"
+											"\n	}",
+											s->GetName(), src, dst);
 		}
 	}
 	return 1;

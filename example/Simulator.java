@@ -28,11 +28,8 @@ public class Simulator {
 		/**
 		 * source and destination defined in model
 		 */
-		public static String source, destination;
-		/**
-		 * source and destination defined in test case
-		 */
-		public String realSource, realDestination;
+		public String source;
+		public String destination;
 		public Object param;
 		public boolean isInput;
 		
@@ -40,7 +37,7 @@ public class Simulator {
 			String str = "!";
 			if (isInput)
 				str = "?";
-			str = String.format("%s	%s	%s{%s}	%s", str, realSource, this.getClass().getSimpleName(), param, realDestination);
+			str = String.format("%s	%s	%s{%s}	%s", str, this.source, this.getClass().getSimpleName(), param, destination);
 			return str;
 		}
 		
@@ -138,23 +135,18 @@ public class Simulator {
 		return null;
 	}
 	
-	protected void output(Class<?> signalClass, Object var){
+	protected void output(Signal output){
 		Signal ev = getCurrentSignal();
 		
-		if (ev.isLike(signalClass) && ev.param.equals(var)){
+		if (ev.toString().equals(output.toString())){
 			System.out.println(ev);
 			currentEventIndex ++;
 			return;
 		}
 		
-		if (ev.isInput){
-			System.out.println(" - Fail Output: Input: " + ev.getClass().getSimpleName() + ", Expected an output: " + signalClass.getSimpleName());
-			verdict = false;
-			return;
-		}
-		
-		System.out.println(" - Fail output:\n	+ Output: " + signalClass.getSimpleName() + "{" + var + "}");
-		System.out.println("	+ Expected: " + ev);
+		System.out.println(" - Fail output:"
+				+ "\n	+ Simulator output:   " + output
+				+ "\n	+ Test case expectes: " + ev);
 		verdict = false;
 	}
 	
@@ -245,8 +237,13 @@ public class Simulator {
 			ev.isInput = ! ev.isInput;
 		}
 		
-		ev.realSource = getContentInside(src);
-		ev.realDestination = getContentInside(dst);
+		if (src.equals("t"))
+			src = "env";
+		if (dst.equals("t"))
+			dst = "env";
+		
+		ev.source = getContentInside(src);
+		ev.destination = getContentInside(dst);
 		
 		//create param
 		Field fields[] = cls.getFields();
