@@ -10,7 +10,6 @@ public class TestRBC {
 
 	@Test
 	public void test() throws Exception {
-		
 		ETCS.OBU obu = new ETCS.OBU();
 		assertTrue(obu.run("./src/testcase.tc"));
 	}

@@ -9,19 +9,7 @@ import java.util.*;
  *
  */
 public class Simulator {
-	/**
-	 * to be overridden by extended class 
-	 */
-	public String getSystemName(){
-		return "Simulator";
-	}
 	
-	/**
-	 * 
-	 */
-	public String getInitStateName(){
-		return "init";
-	}
 	//Data type definition
 	public static abstract class Event{}
 	public static abstract class Signal extends Event{
@@ -47,6 +35,7 @@ public class Simulator {
 			return true;
 		}
 	}
+	
 	public static class Delay extends Event{
 		public int delay;
 		public String toString(){
@@ -54,11 +43,40 @@ public class Simulator {
 		}
 	}
 	
-	//virtual methods to be implemented in generated class
+	public static class DataStruct{
+		public String toString(){
+			Field[] fields = this.getClass().getFields();
+			String str = "";
+			for (int i=0; i<fields.length; i++)
+				try {
+					if (i == 0)
+						str = fields[0].get(this).toString();
+					else
+						str += "," + fields[i].get(this);
+				} catch (Exception e) {}
+			return "{" + str + "}";
+		}
+	}
+	
+	//methods to be overridden in generated class
 	public void updateClock(int val){}
 	protected void callState(String stateName){}
 	public void state_init(){}
-
+	/**
+	 * to be overridden by extended class 
+	 */
+	public String getSystemName(){
+		return "Simulator";
+	}
+	
+	/**
+	 * 
+	 */
+	public String getInitStateName(){
+		return "init";
+	}
+	
+	
 	
 	int currentEventIndex;
 	List<Event> eventList;

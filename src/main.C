@@ -547,17 +547,9 @@ void print_type_definitions(IfList<IfType> *types){
 			if (3 <= strlen(name) && strncmp("t_",name,2) != 0 ){
 				IfList<IfVariable> *vars = rec->GetFields();
 
-				fprintf(output, "\n	public static class %s{", name);
+				fprintf(output, "\n	public static class %s extends DataStruct{", name);
 				print_variables("		", vars);
-				//function toString()
-				fprintf(output, "\n		public String toString(){\n			return ");
-				for (int j=0; j<vars->GetCount(); j++)
-					if (j == 0)
-						fprintf (output, "%s", vars->GetAt(j)->GetName());
-					else
-						fprintf (output, " + \",\" + %s", vars->GetAt(j)->GetName());
-
-				fprintf(output, ";\n		}\n	}");
+				fprintf(output, "\n	}");
 			}
 		}
 	}

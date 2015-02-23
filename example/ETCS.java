@@ -7,31 +7,22 @@ public class ETCS extends Simulator{
 	public String getSystemName(){
 		return "ETCS";
 	}
-	public static class DangerPointInfo{
+	public static class DangerPointInfo extends DataStruct{
 		public Integer distance;
 		public Integer speed;
-		public String toString(){
-			return distance + "," + speed;
-		}
 	}
-	public static class OverlapInfo{
+	public static class OverlapInfo extends DataStruct{
 		public Integer distance;
 		public Integer timeout;
 		public Integer distanceTimeout;
 		public Integer speed;
-		public String toString(){
-			return distance + "," + timeout + "," + distanceTimeout + "," + speed;
-		}
 	}
-	public static class Section{
+	public static class Section extends DataStruct{
 		public Integer distance;
 		public Integer timeout;
 		public Integer timeoutStop;
-		public String toString(){
-			return distance + "," + timeout + "," + timeoutStop;
-		}
 	}
-	public static class EndSection{
+	public static class EndSection extends DataStruct{
 		public Integer distance;
 		public Integer timeout;
 		public Integer timeoutStop;
@@ -39,16 +30,10 @@ public class ETCS extends Simulator{
 		public Integer endDistance;
 		public DangerPointInfo dangerInfo;
 		public OverlapInfo overlapInfo;
-		public String toString(){
-			return distance + "," + timeout + "," + timeoutStop + "," + endTimeout + "," + endDistance + "," + dangerInfo + "," + overlapInfo;
-		}
 	}
-	public static class MovementAuthority{
+	public static class MovementAuthority extends DataStruct{
 		public Integer distance;
 		public Integer speed;
-		public String toString(){
-			return distance + "," + speed;
-		}
 	}
 	public static enum Reason {
 		DRIVER, TIME_BEFORE_EOA_LOA, TIMER_EXPIRED, TRACK_DES, TRACK_FREEUP}
@@ -63,61 +48,85 @@ public class ETCS extends Simulator{
 
 	//Signals=============================
 	public static class MA extends Signal{
-		public static String source = "RBC";
-		public static String destination = "OBU";
 		public MovementAuthority param;
+		public MA(){
+			source = "RBC";
+			destination = "OBU";
+		}
 	}
 	public static class MARequest extends Signal{
-		public static String source = "OBU";
-		public static String destination = "RBC";
 		public Integer param;
+		public MARequest(){
+			source = "OBU";
+			destination = "RBC";
+		}
 	}
 	public static class NeedSendMARequest extends Signal{
-		public static String source = "env";
-		public static String destination = "OBU";
+		public NeedSendMARequest(){
+			source = "env";
+			destination = "OBU";
+		}
 	}
 	public static class TemporarySpeedRestrictions extends Signal{
-		public static String source = "env";
-		public static String destination = "OBU";
+		public TemporarySpeedRestrictions(){
+			source = "env";
+			destination = "OBU";
+		}
 	}
 	public static class CurrentStatus extends Signal{
-		public static String source = "env";
-		public static String destination = "OBU";
 		public STATUS param;
+		public CurrentStatus(){
+			source = "env";
+			destination = "OBU";
+		}
 	}
 	public static class ESpeed extends Signal{
-		public static String source = "env";
-		public static String destination = "OBU";
 		public Integer param;
+		public ESpeed(){
+			source = "env";
+			destination = "OBU";
+		}
 	}
 	public static class ELocation extends Signal{
-		public static String source = "env";
-		public static String destination = "OBU";
 		public Integer param;
+		public ELocation(){
+			source = "env";
+			destination = "OBU";
+		}
 	}
 	public static class ServiceBrakingCmd extends Signal{
-		public static String source = "OBU";
-		public static String destination = "env";
 		public Integer param;
+		public ServiceBrakingCmd(){
+			source = "OBU";
+			destination = "env";
+		}
 	}
 	public static class EBcmd extends Signal{
-		public static String source = "OBU";
-		public static String destination = "env";
 		public Integer param;
+		public EBcmd(){
+			source = "OBU";
+			destination = "env";
+		}
 	}
 	public static class DMIcmd extends Signal{
-		public static String source = "OBU";
-		public static String destination = "env";
 		public Integer param;
+		public DMIcmd(){
+			source = "OBU";
+			destination = "env";
+		}
 	}
 	public static class EmergencyBrake extends Signal{
-		public static String source = "OBU";
-		public static String destination = "env";
+		public EmergencyBrake(){
+			source = "OBU";
+			destination = "env";
+		}
 	}
 	public static class DLocation extends Signal{
-		public static String source = "env";
-		public static String destination = "RBC";
 		public Integer param;
+		public DLocation(){
+			source = "env";
+			destination = "RBC";
+		}
 	}
 	//================================
 	public static class OBU extends ETCS{
@@ -135,12 +144,15 @@ public class ETCS extends Simulator{
 
 		public void state_init(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr1" dst="TEMP" input="ELocation(l)" output="output MARequest(l) to rbc"
 			Integer _l = (Integer) getInput(ELocation.class, Integer.class);
 			if (_l != null) {
 				l = _l;
-				output(MARequest.class, l);
+				_out = new MARequest();
+				_out.param = l;
+				output(_out);
 				tranFired = true;
 				nextState("TEMP");
 			}
@@ -151,6 +163,7 @@ public class ETCS extends Simulator{
 
 		public void state_TEMP(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr2" dst="NORMAL" input="MA(m)" output=""
 			MovementAuthority _m = (MovementAuthority) getInput(MA.class, MovementAuthority.class);
@@ -167,18 +180,25 @@ public class ETCS extends Simulator{
 
 		public void state_NORMAL(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr3" dst="INTERVENTION" input="" output="output EBcmd(1)"
 			if ((v > m.speed)) {
-				output(EBcmd.class, 1);
-				output(DMIcmd.class, m.speed);
+				_out = new EBcmd();
+				_out.param = 1;
+				output(_out);
+				_out = new DMIcmd();
+				_out.param = m.speed;
+				output(_out);
 				tranFired = true;
 				nextState("INTERVENTION");
 			}
 
 			//transition id="tr4" dst="INDICATION" input="" output="output DMIcmd(m.speed)"
 			if ((v <= m.speed)) {
-				output(DMIcmd.class, m.speed);
+				_out = new DMIcmd();
+				_out.param = m.speed;
+				output(_out);
 				tranFired = true;
 				nextState("INDICATION");
 			}
@@ -189,6 +209,7 @@ public class ETCS extends Simulator{
 
 		public void state_INDICATION(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr5" dst="INDICATION" input="MA(m)" output=""
 			MovementAuthority _m = (MovementAuthority) getInput(MA.class, MovementAuthority.class);
@@ -214,7 +235,9 @@ public class ETCS extends Simulator{
 				if (_l != null) {
 					l = _l;
 					c = 0; //reset clock
-					output(MARequest.class, l);
+					_out = new MARequest();
+					_out.param = l;
+					output(_out);
 					tranFired = true;
 					nextState("INDICATION");
 				}
@@ -226,11 +249,16 @@ public class ETCS extends Simulator{
 
 		public void state_INTERVENTION(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr8" dst="INDICATION" input="" output="output EBcmd(0)"
 			if ((v==0)) {
-				output(EBcmd.class, 0);
-				output(DMIcmd.class, m.speed);
+				_out = new EBcmd();
+				_out.param = 0;
+				output(_out);
+				_out = new DMIcmd();
+				_out.param = m.speed;
+				output(_out);
 				tranFired = true;
 				nextState("INDICATION");
 			}
@@ -284,6 +312,7 @@ public class ETCS extends Simulator{
 
 		public void state_init(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr1" dst="IDLE" input="DLocation(x)" output=""
 			Integer _x = (Integer) getInput(DLocation.class, Integer.class);
@@ -301,6 +330,7 @@ public class ETCS extends Simulator{
 
 		public void state_IDLE(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr2" dst="MA" input="MARequest(y)" output=""
 			if (c>1) {
@@ -335,11 +365,14 @@ public class ETCS extends Simulator{
 
 		public void state_MA(){
 			boolean tranFired = false;
+			Signal _out;
 
 			//transition id="tr5" dst="IDLE" input="" output="output MA(m) to obu"
 			m.distance = (x - y);
 			m.speed = getReleaseSpeed((x - y));
-			output(MA.class, m);
+			_out = new MA();
+			_out.param = m;
+			output(_out);
 			c = 0; //reset clock
 			tranFired = true;
 			nextState("IDLE");
