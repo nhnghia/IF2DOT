@@ -1,0 +1,6 @@
+1:COR:stateName.equals("init"):TRUE:ETCS$RBC@callState:387:stateName.equals("init") |==> false
+2:COR:stateName.equals("init"):FALSE:ETCS$RBC@callState:387:stateName.equals("init") |==> true
+3:COR:stateName.equals("IDLE"):TRUE:ETCS$RBC@callState:388:stateName.equals("IDLE") |==> false
+4:COR:stateName.equals("IDLE"):FALSE:ETCS$RBC@callState:388:stateName.equals("IDLE") |==> true
+5:COR:stateName.equals("MA"):TRUE:ETCS$RBC@callState:389:stateName.equals("MA") |==> false
+6:COR:stateName.equals("MA"):FALSE:ETCS$RBC@callState:389:stateName.equals("MA") |==> true

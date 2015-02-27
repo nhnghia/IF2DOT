@@ -1,0 +1,14 @@
+// Define an own operator group
+targetOp{
+	// A simple mml file to generate all mutants
+	BIN(>)->{>=,<,!=,FALSE};
+	// Enable Statement Deletion operator
+	//STD;
+	ROR;
+}
+
+// Define the target package, class, or method
+
+// Call defined operator group for specified target
+targetOp<"ETCS$OBU@updateClock">;
+targetOp<"ETCS$OBU@state_INDICATION">;

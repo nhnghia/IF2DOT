@@ -1,0 +1,14 @@
+1:ROR:>=(int,int):<(int,int):Simulator@getInput:157:currentEventIndex >= eventList.size() |==> currentEventIndex < eventList.size()
+2:ROR:>=(int,int):==(int,int):Simulator@getInput:157:currentEventIndex >= eventList.size() |==> currentEventIndex == eventList.size()
+3:ROR:>=(int,int):TRUE(int,int):Simulator@getInput:157:currentEventIndex >= eventList.size() |==> true
+4:LVR:FALSE:TRUE:Simulator@getInput:162:false |==> true
+5:ROR:==(boolean,boolean):FALSE(boolean,boolean):Simulator@getInput:162:ev.isInput == false |==> false
+6:ROR:==(boolean,boolean):LHS(boolean,boolean):Simulator@getInput:162:ev.isInput == false |==> ev.isInput
+7:ROR:==(boolean,boolean):RHS(boolean,boolean):Simulator@getInput:162:ev.isInput == false |==> false
+8:LVR:TRUE:FALSE:Simulator@getInput:166:true |==> false
+9:ROR:==(boolean,boolean):FALSE(boolean,boolean):Simulator@getInput:166:ev.isLike(signalClass) == true |==> false
+10:ROR:==(boolean,boolean):LHS(boolean,boolean):Simulator@getInput:166:ev.isLike(signalClass) == true |==> ev.isLike(signalClass)
+11:ROR:==(boolean,boolean):RHS(boolean,boolean):Simulator@getInput:166:ev.isLike(signalClass) == true |==> true
+12:LVR:POS:0:Simulator@getInput:168:1 |==> 0
+13:LVR:POS:NEG:Simulator@getInput:168:1 |==> -1
+14:LVR:TRUE:FALSE:Simulator@getInput:170:true |==> false

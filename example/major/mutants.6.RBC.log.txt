@@ -1,0 +1,12 @@
+1:ROR:>(int,int):!=(int,int):ETCS$RBC@state_IDLE:336:c > 1 |==> c != 1
+2:ROR:>(int,int):<(int,int):ETCS$RBC@state_IDLE:336:c > 1 |==> c < 1
+3:ROR:>(int,int):>=(int,int):ETCS$RBC@state_IDLE:336:c > 1 |==> c >= 1
+4:ROR:>(int,int):FALSE(int,int):ETCS$RBC@state_IDLE:336:c > 1 |==> false
+5:ROR:>(int,int):!=(int,int):ETCS$RBC@state_IDLE:346:c1 > 40 |==> c1 != 40
+6:ROR:>(int,int):<(int,int):ETCS$RBC@state_IDLE:346:c1 > 40 |==> c1 < 40
+7:ROR:>(int,int):>=(int,int):ETCS$RBC@state_IDLE:346:c1 > 40 |==> c1 >= 40
+8:ROR:>(int,int):FALSE(int,int):ETCS$RBC@state_IDLE:346:c1 > 40 |==> false
+9:ROR:>=(int,int):!=(int,int):ETCS$RBC@state_IDLE:357:c >= 60 |==> c != 60
+10:ROR:>=(int,int):<(int,int):ETCS$RBC@state_IDLE:357:c >= 60 |==> c < 60
+11:ROR:>=(int,int):==(int,int):ETCS$RBC@state_IDLE:357:c >= 60 |==> c == 60
+12:ROR:>=(int,int):FALSE(int,int):ETCS$RBC@state_IDLE:357:c >= 60 |==> false

@@ -1,0 +1,42 @@
+1:LVR:FALSE:TRUE:ETCS$RBC@state_init:314:false |==> true
+2:LVR:0:POS:ETCS$RBC@state_init:321:0 |==> 1
+3:LVR:0:NEG:ETCS$RBC@state_init:321:0 |==> -1
+4:LVR:0:POS:ETCS$RBC@state_init:322:0 |==> 1
+5:LVR:0:NEG:ETCS$RBC@state_init:322:0 |==> -1
+6:LVR:TRUE:FALSE:ETCS$RBC@state_init:323:true |==> false
+7:STD:<CALL>:<NO-OP>:ETCS$RBC@state_init:324:nextState("IDLE") |==> <NO-OP>
+8:LVR:FALSE:TRUE:ETCS$RBC@state_init:328:false |==> true
+9:STD:<CALL>:<NO-OP>:ETCS$RBC@state_init:328:noFire("init") |==> <NO-OP>
+10:LVR:FALSE:TRUE:ETCS$RBC@state_IDLE:332:false |==> true
+11:LVR:POS:0:ETCS$RBC@state_IDLE:336:1 |==> 0
+12:LVR:POS:NEG:ETCS$RBC@state_IDLE:336:1 |==> -1
+13:LVR:TRUE:FALSE:ETCS$RBC@state_IDLE:340:true |==> false
+14:STD:<CALL>:<NO-OP>:ETCS$RBC@state_IDLE:341:nextState("MA") |==> <NO-OP>
+15:LVR:POS:0:ETCS$RBC@state_IDLE:346:40 |==> 0
+16:LVR:POS:NEG:ETCS$RBC@state_IDLE:346:40 |==> -40
+17:LVR:0:POS:ETCS$RBC@state_IDLE:350:0 |==> 1
+18:LVR:0:NEG:ETCS$RBC@state_IDLE:350:0 |==> -1
+19:LVR:TRUE:FALSE:ETCS$RBC@state_IDLE:351:true |==> false
+20:STD:<CALL>:<NO-OP>:ETCS$RBC@state_IDLE:352:nextState("IDLE") |==> <NO-OP>
+21:LVR:POS:0:ETCS$RBC@state_IDLE:357:60 |==> 0
+22:LVR:POS:NEG:ETCS$RBC@state_IDLE:357:60 |==> -60
+23:LVR:TRUE:FALSE:ETCS$RBC@state_IDLE:358:true |==> false
+24:STD:<CALL>:<NO-OP>:ETCS$RBC@state_IDLE:359:nextState("MA") |==> <NO-OP>
+25:LVR:FALSE:TRUE:ETCS$RBC@state_IDLE:363:false |==> true
+26:STD:<CALL>:<NO-OP>:ETCS$RBC@state_IDLE:363:noFire("IDLE") |==> <NO-OP>
+27:LVR:FALSE:TRUE:ETCS$RBC@state_MA:367:false |==> true
+28:AOR:-(int,int):%(int,int):ETCS$RBC@state_MA:371:x - y |==> x % y
+29:AOR:-(int,int):*(int,int):ETCS$RBC@state_MA:371:x - y |==> x * y
+30:AOR:-(int,int):+(int,int):ETCS$RBC@state_MA:371:x - y |==> x + y
+31:AOR:-(int,int):/(int,int):ETCS$RBC@state_MA:371:x - y |==> x / y
+32:AOR:-(int,int):%(int,int):ETCS$RBC@state_MA:372:x - y |==> x % y
+33:AOR:-(int,int):*(int,int):ETCS$RBC@state_MA:372:x - y |==> x * y
+34:AOR:-(int,int):+(int,int):ETCS$RBC@state_MA:372:x - y |==> x + y
+35:AOR:-(int,int):/(int,int):ETCS$RBC@state_MA:372:x - y |==> x / y
+36:STD:<CALL>:<NO-OP>:ETCS$RBC@state_MA:375:output(_out) |==> <NO-OP>
+37:LVR:0:POS:ETCS$RBC@state_MA:376:0 |==> 1
+38:LVR:0:NEG:ETCS$RBC@state_MA:376:0 |==> -1
+39:LVR:TRUE:FALSE:ETCS$RBC@state_MA:377:true |==> false
+40:STD:<CALL>:<NO-OP>:ETCS$RBC@state_MA:378:nextState("IDLE") |==> <NO-OP>
+41:LVR:FALSE:TRUE:ETCS$RBC@state_MA:381:false |==> true
+42:STD:<CALL>:<NO-OP>:ETCS$RBC@state_MA:381:noFire("MA") |==> <NO-OP>

@@ -1,0 +1,15 @@
+// Define an own operator group
+targetOp{
+	 AOR;
+	 LOR;
+    COR;
+    ROR;
+	 ORU;
+	 LVR;
+}
+
+// Define the target package, class, or method
+target1="ETCS$OBU@callState";
+
+// Call defined operator group for specified target
+targetOp<target1>;

@@ -1,0 +1,4 @@
+1:ROR:>(int,int):!=(int,int):ETCS$OBU@state_INDICATION:233:c > 60 |==> c != 60
+2:ROR:>(int,int):<(int,int):ETCS$OBU@state_INDICATION:233:c > 60 |==> c < 60
+3:ROR:>(int,int):>=(int,int):ETCS$OBU@state_INDICATION:233:c > 60 |==> c >= 60
+4:ROR:>(int,int):FALSE(int,int):ETCS$OBU@state_INDICATION:233:c > 60 |==> false

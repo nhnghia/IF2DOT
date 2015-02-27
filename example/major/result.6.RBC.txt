@@ -1,0 +1,167 @@
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+Original verdict: true
+
+Covered mutants:
+1 2 3 4 5 6 7 8 9 10 11 12 
+
+Mutation analysis: 
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+1 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+ - End at state: IDLE
+ - Simulator expects input/outputs: 
+delay	2
+ - Expected event in test case: ?	OBU	MARequest{3}	RBC
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+2 - verdict: false
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+3 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+ - End at state: IDLE
+ - Simulator expects input/outputs: 
+delay	2
+ - Expected event in test case: ?	OBU	MARequest{3}	RBC
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+4 - verdict: false
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+5 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+6 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+7 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+8 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+9 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+10 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+11 - verdict: true
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{6}	RBC
+====IDLE================
+delay	2
+?	OBU	MARequest{3}	RBC
+====MA================
+!	RBC	MA{{3,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+12 - verdict: true
+
+
+Number of mutants killed: 2 / 12 (16.666666666666668%)
+

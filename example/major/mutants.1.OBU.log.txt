@@ -1,0 +1,10 @@
+1:COR:stateName.equals("init"):TRUE:ETCS$OBU@callState:284:stateName.equals("init") |==> false
+2:COR:stateName.equals("init"):FALSE:ETCS$OBU@callState:284:stateName.equals("init") |==> true
+3:COR:stateName.equals("TEMP"):TRUE:ETCS$OBU@callState:285:stateName.equals("TEMP") |==> false
+4:COR:stateName.equals("TEMP"):FALSE:ETCS$OBU@callState:285:stateName.equals("TEMP") |==> true
+5:COR:stateName.equals("NORMAL"):TRUE:ETCS$OBU@callState:286:stateName.equals("NORMAL") |==> false
+6:COR:stateName.equals("NORMAL"):FALSE:ETCS$OBU@callState:286:stateName.equals("NORMAL") |==> true
+7:COR:stateName.equals("INDICATION"):TRUE:ETCS$OBU@callState:287:stateName.equals("INDICATION") |==> false
+8:COR:stateName.equals("INDICATION"):FALSE:ETCS$OBU@callState:287:stateName.equals("INDICATION") |==> true
+9:COR:stateName.equals("INTERVENTION"):TRUE:ETCS$OBU@callState:288:stateName.equals("INTERVENTION") |==> false
+10:COR:stateName.equals("INTERVENTION"):FALSE:ETCS$OBU@callState:288:stateName.equals("INTERVENTION") |==> true

@@ -58,6 +58,9 @@ const char *systemName;
 char *range_types[20];
 int range_type_number = 0;
 
+//complex type
+char complex_types[1000];
+
 char* replaceAll(const char *txt, char* c_from, char *c_to){
 	string s_txt = string(txt);
 	string s_from = string(c_from);
@@ -398,10 +401,15 @@ int print_variables(const char *space, IfList<IfVariable> *variables){
 		//if (var->GetType()->IsBasic())
 		{
 			char *val = Dump(var->GetInitializer());
+			char *type = get_type(var->GetType());
 			if (val == NULL || strlen(val) == 0)
-				fprintf(output, "\n%spublic %s %s;", space, get_type(var->GetType()), var->GetName());
+				//create a new instance to avoid null exception when this variable is used
+				if (strstr(complex_types, type))
+					fprintf(output, "\n%spublic %s %s = new %s();", space, type, var->GetName(), type);
+				else
+					fprintf(output, "\n%spublic %s %s;", space, type, var->GetName());
 			else
-				fprintf(output, "\n%spublic %s %s = %s;", space, get_type(var->GetType()), var->GetName(), val);
+				fprintf(output, "\n%spublic %s %s = %s;", space, type, var->GetName(), val);
 		}
 	}
 	return 1;
@@ -546,6 +554,8 @@ void print_type_definitions(IfList<IfType> *types){
 			//The signals will be changed to record with name starts with t_
 			if (3 <= strlen(name) && strncmp("t_",name,2) != 0 ){
 				IfList<IfVariable> *vars = rec->GetFields();
+
+				sprintf(complex_types, "%s,%s", complex_types, name);
 
 				fprintf(output, "\n	public static class %s extends DataStruct{", name);
 				print_variables("		", vars);

@@ -1,0 +1,36 @@
+1:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$OBU@state_init:151:_l != null |==> true
+2:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$OBU@state_init:161:tranFired == false |==> false
+3:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$OBU@state_init:161:tranFired == false |==> tranFired
+4:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$OBU@state_init:161:tranFired == false |==> false
+5:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$OBU@state_TEMP:170:_m != null |==> true
+6:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$OBU@state_TEMP:178:tranFired == false |==> false
+7:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$OBU@state_TEMP:178:tranFired == false |==> tranFired
+8:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$OBU@state_TEMP:178:tranFired == false |==> false
+9:ROR:>(int,int):!=(int,int):ETCS$OBU@state_NORMAL:186:v > m.speed |==> v != m.speed
+10:ROR:>(int,int):>=(int,int):ETCS$OBU@state_NORMAL:186:v > m.speed |==> v >= m.speed
+11:ROR:>(int,int):FALSE(int,int):ETCS$OBU@state_NORMAL:186:v > m.speed |==> false
+12:ROR:<=(int,int):<(int,int):ETCS$OBU@state_NORMAL:198:v <= m.speed |==> v < m.speed
+13:ROR:<=(int,int):==(int,int):ETCS$OBU@state_NORMAL:198:v <= m.speed |==> v == m.speed
+14:ROR:<=(int,int):TRUE(int,int):ETCS$OBU@state_NORMAL:198:v <= m.speed |==> true
+15:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$OBU@state_NORMAL:207:tranFired == false |==> false
+16:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$OBU@state_NORMAL:207:tranFired == false |==> tranFired
+17:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$OBU@state_NORMAL:207:tranFired == false |==> false
+18:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$OBU@state_INDICATION:216:_m != null |==> true
+19:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$OBU@state_INDICATION:225:_v != null |==> true
+20:ROR:>(int,int):!=(int,int):ETCS$OBU@state_INDICATION:233:c > 60 |==> c != 60
+21:ROR:>(int,int):>=(int,int):ETCS$OBU@state_INDICATION:233:c > 60 |==> c >= 60
+22:ROR:>(int,int):FALSE(int,int):ETCS$OBU@state_INDICATION:233:c > 60 |==> false
+23:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$OBU@state_INDICATION:235:_l != null |==> true
+24:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$OBU@state_INDICATION:247:tranFired == false |==> false
+25:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$OBU@state_INDICATION:247:tranFired == false |==> tranFired
+26:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$OBU@state_INDICATION:247:tranFired == false |==> false
+27:ROR:==(int,int):<=(int,int):ETCS$OBU@state_INTERVENTION:255:v == 0 |==> v <= 0
+28:ROR:==(int,int):>=(int,int):ETCS$OBU@state_INTERVENTION:255:v == 0 |==> v >= 0
+29:ROR:==(int,int):FALSE(int,int):ETCS$OBU@state_INTERVENTION:255:v == 0 |==> false
+30:ROR:>(int,int):!=(int,int):ETCS$OBU@state_INTERVENTION:267:v > 0 |==> v != 0
+31:ROR:>(int,int):>=(int,int):ETCS$OBU@state_INTERVENTION:267:v > 0 |==> v >= 0
+32:ROR:>(int,int):FALSE(int,int):ETCS$OBU@state_INTERVENTION:267:v > 0 |==> false
+33:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$OBU@state_INTERVENTION:269:_v != null |==> true
+34:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$OBU@state_INTERVENTION:278:tranFired == false |==> false
+35:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$OBU@state_INTERVENTION:278:tranFired == false |==> tranFired
+36:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$OBU@state_INTERVENTION:278:tranFired == false |==> false

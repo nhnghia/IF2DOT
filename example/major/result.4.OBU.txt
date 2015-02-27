@@ -1,0 +1,488 @@
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+Original verdict: true
+
+Covered mutants:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 25 26 
+
+Mutation analysis: 
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+1 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+2 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+ - End at state: init
+ - Simulator expects input/outputs: 
+--------------------------------------------------------
+3 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+4 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+5 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+6 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+ - End at state: TEMP
+ - Simulator expects input/outputs: 
+--------------------------------------------------------
+7 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+8 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+ - Fail output:
+	+ Simulator output:   !	OBU	EBcmd{1}	env
+	+ Test case expectes: !	OBU	DMIcmd{80}	env
+!	OBU	DMIcmd{80}	env
+ - Fail output:
+	+ Simulator output:   !	OBU	DMIcmd{80}	env
+	+ Test case expectes: ?	env	ESpeed{190}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+9 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+10 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+ - End at state: NORMAL
+ - Simulator expects input/outputs: 
+ - Expected event in test case: !	OBU	EBcmd{1}	env
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+11 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+12 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+ - End at state: NORMAL
+ - Simulator expects input/outputs: 
+ - Expected event in test case: !	OBU	DMIcmd{80}	env
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+13 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+ - Fail output:
+	+ Simulator output:   !	OBU	DMIcmd{80}	env
+	+ Test case expectes: null
+--------------------------------------------------------
+14 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+15 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+ - End at state: NORMAL
+ - Simulator expects input/outputs: 
+ - End at state: NORMAL
+ - Simulator expects input/outputs: 
+--------------------------------------------------------
+16 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+17 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+====INDICATION================
+loop forever
+?	env	ESpeed{190}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+18 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+19 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+20 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+21 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+22 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+24 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+ - End at state: INDICATION
+ - Simulator expects input/outputs: 
+--------------------------------------------------------
+25 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+26 - verdict: true
+
+
+Number of mutants killed: 9 / 25 (36.0%)
+

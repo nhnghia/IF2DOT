@@ -1,0 +1,221 @@
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+Original verdict: true
+
+Covered mutants:
+1 2 3 4 5 6 7 8 9 10 11 12 13 
+
+Mutation analysis: 
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+1 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+2 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?ELocation,   
+ - Expected event in test case: ?	env	ELocation{3}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+3 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?ELocation,   
+ - Expected event in test case: ?	env	ELocation{3}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+4 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+5 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?ELocation,   
+ - Expected event in test case: ?	env	ELocation{3}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+6 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+7 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?ELocation,   
+ - Expected event in test case: ?	env	ELocation{3}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+8 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?ELocation,   
+ - Expected event in test case: ?	env	ELocation{3}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+9 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+====NORMAL================
+!	OBU	EBcmd{1}	env
+!	OBU	DMIcmd{80}	env
+All events in the test case are executed successfully
+--------------------------------------------------------
+10 - verdict: true
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+!	OBU	MARequest{3}	RBC
+====TEMP================
+delay	2
+?	RBC	MA{{3,80}}	OBU
+====NORMAL================
+!	OBU	DMIcmd{80}	env
+====INDICATION================
+?	env	ESpeed{190}	OBU
+java.lang.ClassCastException: java.lang.Integer cannot be cast to ETCS$MovementAuthority
+java.lang.ClassCastException: java.lang.Integer cannot be cast to ETCS$MovementAuthority
+	at ETCS$OBU.state_INDICATION(ETCS.java:215)
+	at ETCS$OBU.callState(ETCS.java:287)
+	at Simulator.nextState(Simulator.java:135)
+	at ETCS$OBU.state_NORMAL(ETCS.java:203)
+	at ETCS$OBU.callState(ETCS.java:286)
+	at Simulator.nextState(Simulator.java:135)
+	at ETCS$OBU.state_TEMP(ETCS.java:174)
+	at ETCS$OBU.callState(ETCS.java:285)
+	at Simulator.nextState(Simulator.java:135)
+	at ETCS$OBU.state_init(ETCS.java:157)
+	at ETCS$OBU.callState(ETCS.java:284)
+	at Simulator.nextState(Simulator.java:135)
+	at Simulator.run(Simulator.java:193)
+	at Main.run_obu(Main.java:7)
+	at TestOBU.main(TestOBU.java:27)
+--------------------------------------------------------
+11 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+ - Fail output:
+	+ Simulator output:   !	OBU	MARequest{3}	RBC
+	+ Test case expectes: ?	env	ELocation{3}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+12 - verdict: false
+
+-----------------------RUNING OBU-----------------------
+====init================
+?	env	ELocation{3}	OBU
+java.lang.ArrayIndexOutOfBoundsException: -1
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Simulator.getCurrentSignal(Simulator.java:361)
+	at Simulator.output(Simulator.java:165)
+	at ETCS$OBU.state_init(ETCS.java:155)
+	at ETCS$OBU.callState(ETCS.java:284)
+	at Simulator.nextState(Simulator.java:135)
+	at Simulator.run(Simulator.java:193)
+	at Main.run_obu(Main.java:7)
+	at TestOBU.main(TestOBU.java:27)
+--------------------------------------------------------
+13 - verdict: false
+
+
+Number of mutants killed: 8 / 13 (61.53846153846154%)
+

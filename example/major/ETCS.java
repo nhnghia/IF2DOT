@@ -28,8 +28,8 @@ public class ETCS extends Simulator{
 		public Integer timeoutStop;
 		public Integer endTimeout;
 		public Integer endDistance;
-		public DangerPointInfo dangerInfo = new DangerPointInfo();
-		public OverlapInfo overlapInfo = new OverlapInfo();
+		public DangerPointInfo dangerInfo;
+		public OverlapInfo overlapInfo;
 	}
 	public static class MovementAuthority extends DataStruct{
 		public Integer distance;
@@ -130,7 +130,7 @@ public class ETCS extends Simulator{
 	}
 	//================================
 	public static class OBU extends ETCS{
-		public MovementAuthority m = new MovementAuthority();
+		public MovementAuthority m;
 		public Integer v = 0;
 		public Integer c0;
 		public Integer c;

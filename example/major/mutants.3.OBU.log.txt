@@ -1,0 +1,5 @@
+1:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):Simulator@output:167:ev != null |==> true
+2:COR:&&(boolean,boolean):==(boolean,boolean):Simulator@output:167:ev != null && ev.toString().equals(output.toString()) |==> ev != null == ev.toString().equals(output.toString())
+3:COR:&&(boolean,boolean):FALSE(boolean,boolean):Simulator@output:167:ev != null && ev.toString().equals(output.toString()) |==> false
+4:COR:&&(boolean,boolean):LHS(boolean,boolean):Simulator@output:167:ev != null && ev.toString().equals(output.toString()) |==> ev != null
+5:COR:&&(boolean,boolean):RHS(boolean,boolean):Simulator@output:167:ev != null && ev.toString().equals(output.toString()) |==> ev.toString().equals(output.toString())

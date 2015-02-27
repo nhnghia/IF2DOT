@@ -1,0 +1,51 @@
+// Define an own operator group
+targetOp{
+	// A simple mml file to generate all mutants
+	// For COR and ROR, we use the sufficient sets
+
+	BIN(+)->{+,-,*,/,%};
+	BIN(-)->{+,-,*,/,%};
+	BIN(*)->{+,-,*,/,%};
+	BIN(/)->{+,-,*,/,%};
+	BIN(%)->{+,-,*,/,%};
+
+	BIN(>>)->{<<,>>,>>>};
+	BIN(<<)->{<<,>>,>>>};
+	BIN(>>>)->{<<,>>,>>>};
+
+	BIN(&)->{&,|,^};
+	BIN(|)->{&,|,^};
+	BIN(^)->{&,|,^};
+
+	UNR(+)->{+,-,~};
+	UNR(-)->{+,-,~};
+	UNR(~)->{+,-,~};
+	
+	// Use sufficient replacements for ROR
+	BIN(>)->{>=,!=,FALSE};
+	BIN(<)->{<=,!=,FALSE};
+	BIN(>=)->{>,==,TRUE};
+	BIN(<=)->{<,==,TRUE};
+	BIN(==)->{<=,>=,FALSE,LHS,RHS};
+	BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+	// Use sufficient replacements for COR
+	BIN(&&)->{==,LHS,RHS,FALSE};
+	BIN(||)->{!=,LHS,RHS,TRUE};
+
+	// Enable all operators
+	AOR;
+	LOR;
+	SOR;
+	COR;
+	ROR;
+	LVR;
+	ORU;
+	//STD;
+}
+
+// Define the target package, class, or method
+target1="Simulator@getInput";
+
+// Call defined operator group for specified target
+targetOp<target1>;

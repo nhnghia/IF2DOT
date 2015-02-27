@@ -1,0 +1,4 @@
+!;	t;	DLocation{6};	{RBC}0
+delay 2
+?;	{OBU}0;	MARequest{3};	{RBC}0
+!;	{RBC}0;	MA{{3,80}};	{OBU}0

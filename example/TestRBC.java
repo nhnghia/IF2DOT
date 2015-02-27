@@ -11,6 +11,12 @@ public class TestRBC {
 	@Test
 	public void test() throws Exception {
 		ETCS.OBU obu = new ETCS.OBU();
-		assertTrue(obu.run("./src/testcase.tc"));
+		assertTrue(obu.run("./src/obu.testcase.tc"));
+	}
+	
+	@Test
+	public void testRBC() throws Exception {
+		ETCS.RBC obu = new ETCS.RBC();
+		assertTrue(obu.run("./src/rbc.testcase.tc"));
 	}
 }

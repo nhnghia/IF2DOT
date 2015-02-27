@@ -1,0 +1,21 @@
+1:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$RBC@state_init:319:_x != null |==> true
+2:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$RBC@state_init:328:tranFired == false |==> false
+3:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$RBC@state_init:328:tranFired == false |==> tranFired
+4:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$RBC@state_init:328:tranFired == false |==> false
+5:ROR:>(int,int):!=(int,int):ETCS$RBC@state_IDLE:336:c > 1 |==> c != 1
+6:ROR:>(int,int):>=(int,int):ETCS$RBC@state_IDLE:336:c > 1 |==> c >= 1
+7:ROR:>(int,int):FALSE(int,int):ETCS$RBC@state_IDLE:336:c > 1 |==> false
+8:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$RBC@state_IDLE:338:_y != null |==> true
+9:ROR:>(int,int):!=(int,int):ETCS$RBC@state_IDLE:346:c1 > 40 |==> c1 != 40
+10:ROR:>(int,int):>=(int,int):ETCS$RBC@state_IDLE:346:c1 > 40 |==> c1 >= 40
+11:ROR:>(int,int):FALSE(int,int):ETCS$RBC@state_IDLE:346:c1 > 40 |==> false
+12:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):ETCS$RBC@state_IDLE:348:_x != null |==> true
+13:ROR:>=(int,int):==(int,int):ETCS$RBC@state_IDLE:357:c >= 60 |==> c == 60
+14:ROR:>=(int,int):>(int,int):ETCS$RBC@state_IDLE:357:c >= 60 |==> c > 60
+15:ROR:>=(int,int):TRUE(int,int):ETCS$RBC@state_IDLE:357:c >= 60 |==> true
+16:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$RBC@state_IDLE:363:tranFired == false |==> false
+17:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$RBC@state_IDLE:363:tranFired == false |==> tranFired
+18:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$RBC@state_IDLE:363:tranFired == false |==> false
+19:ROR:==(boolean,boolean):FALSE(boolean,boolean):ETCS$RBC@state_MA:381:tranFired == false |==> false
+20:ROR:==(boolean,boolean):LHS(boolean,boolean):ETCS$RBC@state_MA:381:tranFired == false |==> tranFired
+21:ROR:==(boolean,boolean):RHS(boolean,boolean):ETCS$RBC@state_MA:381:tranFired == false |==> false
