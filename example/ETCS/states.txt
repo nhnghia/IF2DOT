@@ -1,0 +1,3898 @@
+
+0:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:init		{m={distance=100,speed=0},v=0,c0=-1,c=-1,l=100,rbc={nil}0} {}
+{time}0		{}
+  @run		0/0 
+
+1:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:TEMP		{m={distance=100,speed=0},v=0,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{MARequest{p1=100}}
+  @top:init		{m={distance=100,speed=0},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+2:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:TEMP		{m={distance=100,speed=0},v=0,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{MARequest{p1=100}}
+  @top:IDLE		{m={distance=100,speed=0},x=100,v=0,y=100,d=100,c=1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/1 0/2 
+
+3:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:TEMP		{m={distance=100,speed=0},v=0,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{MARequest{p1=100}}
+  @top:IDLE		{m={distance=100,speed=0},x=100,v=0,y=100,d=100,c=1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/1 
+
+4:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{MA{p1={distance=0,speed=80}}}
+  @top:TEMP		{m={distance=100,speed=0},v=0,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+5:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=0,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+6:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=191,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+7:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=190,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+8:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=189,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+9:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=188,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+10:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=187,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+11:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=186,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+12:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=185,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+13:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=184,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+14:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=183,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+15:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=182,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+16:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=181,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+17:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=180,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+18:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=179,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+19:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=178,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+20:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=177,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+21:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=176,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+22:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=175,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+23:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=174,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+24:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=173,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+25:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=172,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+26:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=171,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+27:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=170,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+28:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=169,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+29:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=168,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+30:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=167,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+31:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=166,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+32:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=165,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+33:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=164,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+34:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=163,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+35:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=162,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+36:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=161,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+37:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=160,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+38:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=159,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+39:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=158,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+40:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=157,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+41:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=156,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+42:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=155,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+43:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=154,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+44:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=153,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+45:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=152,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+46:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=151,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+47:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=150,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+48:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=149,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+49:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=148,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+50:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=147,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+51:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=146,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+52:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=145,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+53:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=144,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+54:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=143,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+55:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=142,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+56:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=141,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+57:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=140,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+58:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=139,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+59:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=138,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+60:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=137,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+61:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=136,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+62:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=135,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+63:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=134,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+64:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=133,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+65:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=132,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+66:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=131,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+67:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=130,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+68:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=129,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+69:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=128,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+70:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=127,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+71:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=126,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+72:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=125,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+73:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=124,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+74:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=123,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+75:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=122,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+76:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=121,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+77:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=120,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+78:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=119,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+79:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=118,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+80:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=117,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+81:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=116,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+82:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=115,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+83:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=114,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+84:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=113,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+85:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=112,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+86:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=111,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+87:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=110,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+88:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=109,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+89:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=108,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+90:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=107,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+91:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=106,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+92:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=105,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+93:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=104,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+94:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=103,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+95:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=102,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+96:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=101,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+97:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=100,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+98:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=99,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+99:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=98,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+100:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=97,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+101:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=96,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+102:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=95,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+103:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=94,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+104:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=93,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+105:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=92,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+106:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=91,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+107:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=90,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+108:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=89,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+109:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=88,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+110:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=87,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+111:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=86,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+112:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=85,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+113:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=84,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+114:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=83,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+115:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=82,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+116:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=81,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+117:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=80,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+118:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=79,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+119:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=78,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+120:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=77,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+121:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=76,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+122:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=75,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+123:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=74,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+124:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=73,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+125:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=72,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+126:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=71,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+127:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=70,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+128:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=69,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+129:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=68,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+130:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=67,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+131:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=66,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+132:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=65,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+133:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=64,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+134:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=63,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+135:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=62,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+136:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=61,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+137:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=60,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+138:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=59,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+139:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=58,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+140:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=57,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+141:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=56,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+142:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=55,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+143:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=54,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+144:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=53,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+145:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=52,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+146:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=51,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+147:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=50,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+148:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=49,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+149:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=48,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+150:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=47,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+151:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=46,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+152:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=45,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+153:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=44,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+154:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=43,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+155:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=42,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+156:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=41,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+157:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=40,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+158:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=39,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+159:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=38,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+160:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=37,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+161:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=36,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+162:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=35,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+163:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=34,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+164:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=33,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+165:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=32,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+166:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=31,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+167:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=30,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+168:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=29,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+169:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=28,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+170:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=27,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+171:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=26,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+172:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=25,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+173:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=24,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+174:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=23,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+175:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=22,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+176:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=21,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+177:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=20,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+178:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=19,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+179:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=18,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+180:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=17,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+181:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=16,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+182:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=15,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+183:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=14,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+184:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=13,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+185:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=12,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+186:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=11,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+187:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=10,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+188:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=9,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+189:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=8,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+190:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=7,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+191:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=6,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+192:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=5,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+193:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=4,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+194:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=3,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+195:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=2,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+196:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=1,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=-1} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 
+
+197:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{MA{p1={distance=0,speed=80}}}
+  @top:TEMP		{m={distance=100,speed=0},v=0,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+198:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=0,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+199:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=191,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+200:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=190,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+201:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=189,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+202:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=188,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+203:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=187,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+204:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=186,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+205:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=185,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+206:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=184,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+207:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=183,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+208:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=182,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+209:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=181,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+210:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=180,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+211:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=179,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+212:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=178,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+213:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=177,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+214:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=176,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+215:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=175,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+216:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=174,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+217:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=173,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+218:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=172,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+219:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=171,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+220:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=170,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+221:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=169,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+222:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=168,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+223:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=167,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+224:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=166,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+225:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=165,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+226:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=164,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+227:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=163,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+228:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=162,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+229:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=161,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+230:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=160,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+231:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=159,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+232:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=158,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+233:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=157,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+234:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=156,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+235:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=155,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+236:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=154,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+237:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=153,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+238:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=152,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+239:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=151,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+240:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=150,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+241:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=149,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+242:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=148,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+243:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=147,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+244:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=146,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+245:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=145,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+246:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=144,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+247:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=143,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+248:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=142,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+249:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=141,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+250:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=140,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+251:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=139,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+252:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=138,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+253:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=137,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+254:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=136,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+255:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=135,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+256:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=134,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+257:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=133,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+258:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=132,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+259:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=131,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+260:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=130,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+261:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=129,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+262:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=128,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+263:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=127,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+264:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=126,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+265:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=125,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+266:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=124,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+267:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=123,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+268:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=122,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+269:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=121,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+270:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=120,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+271:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=119,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+272:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=118,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+273:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=117,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+274:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=116,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+275:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=115,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+276:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=114,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+277:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=113,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+278:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=112,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+279:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=111,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+280:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=110,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+281:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=109,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+282:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=108,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+283:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=107,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+284:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=106,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+285:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=105,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+286:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=104,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+287:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=103,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+288:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=102,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+289:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=101,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+290:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=100,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+291:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=99,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+292:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=98,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+293:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=97,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+294:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=96,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+295:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=95,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+296:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=94,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+297:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=93,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+298:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=92,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+299:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=91,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+300:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=90,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+301:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=89,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+302:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=88,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+303:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=87,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+304:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=86,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+305:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=85,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+306:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=84,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+307:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=83,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+308:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=82,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+309:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INTERVENTION		{m={distance=0,speed=80},v=81,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+310:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=80,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+311:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=79,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+312:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=78,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+313:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=77,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+314:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=76,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+315:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=75,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+316:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=74,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+317:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=73,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+318:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=72,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+319:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=71,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+320:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=70,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+321:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=69,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+322:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=68,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+323:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=67,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+324:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=66,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+325:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=65,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+326:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=64,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+327:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=63,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+328:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=62,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+329:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=61,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+330:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=60,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+331:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=59,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+332:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=58,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+333:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=57,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+334:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=56,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+335:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=55,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+336:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=54,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+337:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=53,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+338:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=52,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+339:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=51,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+340:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=50,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+341:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=49,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+342:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=48,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+343:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=47,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+344:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=46,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+345:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=45,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+346:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=44,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+347:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=43,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+348:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=42,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+349:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=41,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+350:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=40,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+351:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=39,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+352:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=38,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+353:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=37,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+354:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=36,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+355:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=35,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+356:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=34,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+357:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=33,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+358:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=32,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+359:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=31,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+360:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=30,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+361:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=29,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+362:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=28,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+363:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=27,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+364:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=26,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+365:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=25,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+366:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=24,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+367:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=23,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+368:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=22,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+369:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=21,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+370:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=20,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+371:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=19,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+372:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=18,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+373:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=17,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+374:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=16,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+375:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=15,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+376:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=14,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+377:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=13,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+378:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=12,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+379:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=11,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+380:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=10,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+381:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=9,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+382:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=8,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+383:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=7,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+384:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=6,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+385:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=5,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+386:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=4,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+387:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=3,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+388:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=2,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 
+
+389:
+{RBC_to_OBU}0		{}
+{OBU_to_RBC}0		{}
+{OBU}0		{}
+  @top:INDICATION		{m={distance=0,speed=80},v=1,c0=-1,c=-1,l=100,rbc={RBC}0} {}
+{RBC}0		{}
+  @top:IDLE		{m={distance=0,speed=80},x=100,v=0,y=100,d=100,c=-1,c1=2} {obu={OBU}0}
+{time}0		{}
+  @run		0/0 0/2 

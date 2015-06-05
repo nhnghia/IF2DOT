@@ -1,0 +1,28 @@
+Clear contents in the folder: ./mutants
+Generate Mutants
+====OBU==========================
+- Compiling MML definition file of Error Type: 1
+      15
+- Compiling MML definition file of Error Type: 2
+       8
+- Compiling MML definition file of Error Type: 3
+       6
+- Compiling MML definition file of Error Type: 4
+      28
+- Compiling MML definition file of Error Type: 5
+      62
+- Compiling MML definition file of Error Type: 6
+      45
+====RBC==========================
+- Compiling MML definition file of Error Type: 1
+       9
+- Compiling MML definition file of Error Type: 2
+       8
+- Compiling MML definition file of Error Type: 3
+       6
+- Compiling MML definition file of Error Type: 4
+       8
+- Compiling MML definition file of Error Type: 5
+      46
+- Compiling MML definition file of Error Type: 6
+       5

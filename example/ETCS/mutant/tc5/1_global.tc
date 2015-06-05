@@ -1,0 +1,9 @@
+?;	env;	 ELocation{100};	{OBU}0
+!;	{OBU}0;	 MARequest{100};	{RBC}0
+?;	env;	 DLocation{100};	{RBC}0
+delay 2
+?;	{OBU}0;	 MARequest{100};	{RBC}0
+!;	{RBC}0;	 MA{{0,80}};	{OBU}0
+?;	{RBC}0;	 MA{{0,80}};	{OBU}0
+!;	{OBU}0;	 DMIcmd{80};	env
+?;	env;	 DLocation{100};	{RBC}0

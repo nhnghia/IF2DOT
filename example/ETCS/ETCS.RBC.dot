@@ -1,0 +1,21 @@
+digraph RBC {
+rankdir=TB;
+splines = true;
+  init[shape=doublecircle];
+  {rank=same; init IDLE};
+	  
+  init[shape=doublecircle];
+  init -> IDLE [label="? DLocation(x); \n/set c := 0;
+set c1 := 0;
+"];
+  IDLE -> MA [label="[c>1] ? MARequest(y); "];
+  IDLE -> IDLE [label="[c1>1] ? DLocation(x); \n/reset c1;
+"];
+  IDLE -> MA [label="[c>=60] "];
+  MA -> IDLE [label="\n/ m.distance := (x - y);
+m.speed := call getReleaseSpeed((x - y));
+! MA(m) to obu;
+reset c;
+"];
+}
+

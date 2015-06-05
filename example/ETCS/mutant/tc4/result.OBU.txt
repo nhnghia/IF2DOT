@@ -1,0 +1,2394 @@
+
+Testing Mutant ./mutants/Type1/OBU/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/10
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/11
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/12
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/13
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/14
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/15
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type1/OBU/9
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type2/OBU/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/OBU/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type2/OBU/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/OBU/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+loop forever
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/OBU/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type2/OBU/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type2/OBU/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/OBU/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/OBU/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/OBU/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type3/OBU/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/OBU/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+loop forever
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/OBU/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type3/OBU/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/10
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/11
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/12
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/13
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/14
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/15
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/16
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/17
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/18
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/19
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/20
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/21
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/22
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/23
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/24
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/25
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/26
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/27
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/28
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/OBU/9
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/10
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/11
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/12
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/13
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/14
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/15
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/16
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/17
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/18
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/19
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/20
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/21
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/22
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/23
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/24
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/25
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/26
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/27
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/28
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/29
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/30
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/31
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/32
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/33
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/34
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/35
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/36
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/37
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/38
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/39
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/40
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/41
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/42
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/43
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/44
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/45
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/46
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/47
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/48
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/49
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/50
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/51
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/52
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/53
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/54
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/55
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/56
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/57
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/58
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/59
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/60
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/61
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/62
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/OBU/9
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/10
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/11
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/12
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/13
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/14
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/15
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/16
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/17
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/18
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/19
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/20
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/21
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/22
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/23
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/24
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/25
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/26
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/27
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/28
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/29
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/30
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/31
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/32
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/33
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/34
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/35
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/36
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/37
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/38
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/39
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/40
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/41
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/42
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/43
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/44
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/45
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/OBU/9
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true

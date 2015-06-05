@@ -1,0 +1,27 @@
+// Define an own operator group
+targetOp{
+   // Use sufficient replacements for ROR
+   BIN(>)->{==,<,!=};
+   BIN(<)->{==,>,!=};
+   BIN(>=)->{<,!=};
+   BIN(<=)->{>,!=};
+   BIN(==)->{>,<,!=};
+   BIN(!=)->{==};
+   
+   // Use sufficient replacements for COR
+   BIN(&&)->{||};
+   BIN(||)->{&&};
+
+    // Enable ROR and COR operators
+    COR;
+    ROR;
+}
+
+// Define the target package, class, or method
+
+// Call defined operator group for specified target
+targetOp<"ETCS$OBU@state_init">;
+targetOp<"ETCS$OBU@state_TEMP">;
+targetOp<"ETCS$OBU@state_NORMAL">;
+targetOp<"ETCS$OBU@state_INDICATION">;
+targetOp<"ETCS$OBU@state_INTERVENTION">;

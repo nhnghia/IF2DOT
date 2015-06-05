@@ -1,0 +1,1497 @@
+
+Testing Mutant ./mutants/Type1/RBC/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   
+ - Expected event in test case: ?	OBU	MARequest{100}	RBC
+?	OBU	MARequest{100}	RBC
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+----
+!	RBC	MA{{0,80}}	OBU
+?	env	DLocation{100}	RBC
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: null
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: null
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: null
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type1/RBC/9
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: null
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: null
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: null
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/RBC/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/RBC/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type2/RBC/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/RBC/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+loop forever
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/RBC/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type2/RBC/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type2/RBC/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type2/RBC/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/RBC/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{0,80}}	OBU
+	+ Test case expectes: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/RBC/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type3/RBC/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/RBC/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+loop forever
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type3/RBC/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type3/RBC/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/RBC/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   
+delay	2
+ - Expected event in test case: ?	OBU	MARequest{100}	RBC
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type4/RBC/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type4/RBC/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type4/RBC/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type4/RBC/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/RBC/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type4/RBC/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type4/RBC/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: MA
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/10
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/11
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/12
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/13
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/14
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/15
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/16
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/17
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/18
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/19
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   
+delay	2
+ - Expected event in test case: ?	OBU	MARequest{100}	RBC
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/20
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/21
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/22
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/23
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/24
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/25
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/26
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/27
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/28
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/29
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/30
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/31
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/32
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{10000,80}}	OBU
+	+ Test case expectes: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/33
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{200,80}}	OBU
+	+ Test case expectes: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/34
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+ - Fail output:
+	+ Simulator output:   !	RBC	MA{{1,80}}	OBU
+	+ Test case expectes: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/35
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/36
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/37
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/38
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/39
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+====IDLE================MA
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/40
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/41
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/42
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: MA
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/43
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/44
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: MA
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/45
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: MA
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/46
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: MA
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/6
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type5/RBC/7
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/8
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type5/RBC/9
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: init
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type6/RBC/1
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - Expected event in test case: !	RBC	MA{{0,80}}	OBU
+System was terminated before executing all events in the test case
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type6/RBC/2
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false
+
+Testing Mutant ./mutants/Type6/RBC/3
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/RBC/4
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+All events in the test case are executed successfully
+--------------------------------------------------------
+verdict: true
+
+Testing Mutant ./mutants/Type6/RBC/5
+
+-----------------------RUNING RBC-----------------------
+====init================
+?	env	DLocation{100}	RBC
+====IDLE================init
+delay	2
+?	OBU	MARequest{100}	RBC
+====MA================IDLE
+----
+!	RBC	MA{{0,80}}	OBU
+====IDLE================MA
+?	env	DLocation{100}	RBC
+All events in the test case are executed successfully
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+ - End at state: IDLE
+ - Simulator expects input/outputs: ?DLocation,   ?MARequest,   
+--------------------------------------------------------
+verdict: false

@@ -1,0 +1,26 @@
+// Define an own operator group
+targetOp{
+	// A simple mml file to generate all mutants
+   // Use sufficient replacements for ROR
+   BIN(>)->{==,<,!=};
+   BIN(<)->{==,>,!=};
+   BIN(>=)->{<,!=};
+   BIN(<=)->{>,!=};
+   BIN(==)->{>,<,!=};
+   BIN(!=)->{==};
+   
+   // Use sufficient replacements for COR
+   BIN(&&)->{||};
+   BIN(||)->{&&};
+	// Enable Statement Deletion operator
+	AOR;
+		LOR;
+		SOR;
+		ROR;
+}
+
+// Define the target package, class, or method
+
+// Call defined operator group for specified target
+targetOp<"ETCS$RBC@updateClock">;
+targetOp<"ETCS$RBC@state_IDLE">;

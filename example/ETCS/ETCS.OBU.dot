@@ -1,0 +1,29 @@
+digraph OBU {
+rankdir=TB;
+splines = true;
+  init[shape=doublecircle];
+  {rank=same; init TEMP NORMAL};
+
+  init -> TEMP [label="? ELocation(l); \n/rbc := fork RBC(self);
+! MARequest(l) to rbc;
+"];
+  TEMP -> NORMAL [label=" lazy\n? MA(m); \n/reset c;
+"];
+  NORMAL -> INTERVENTION [label="[v > m.speed] \n/! EBcmd(1);! DMIcmd(m.speed);"];
+  NORMAL -> INDICATION [label="[v <= m.speed] \n/! EBcmd(0);\n! DMIcmd(m.speed);
+"];
+  INDICATION -> INDICATION [label=" lazy\n? MA(m); /reset c;
+
+  
+  "];
+  INDICATION -> NORMAL [label="? ESpeed(v); \n/reset c0;
+"];
+  INDICATION -> INDICATION [label="
+  
+  [c>60] ? ELocation(l); \n/reset c;! MARequest(l); "];
+  
+  INTERVENTION -> INDICATION [label="[v = 0] \n/! EBcmd(0);! DMIcmd(m.speed);"];
+
+  INTERVENTION -> INTERVENTION [label="[v > 0][c0>1] ? ESpeed(v); /reset c0;"];
+}
+
