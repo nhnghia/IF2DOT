@@ -1,0 +1,1 @@
+This folder contains the evaluation of test cases in the ETCS case study
